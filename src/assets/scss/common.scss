@@ -1,0 +1,21 @@
+@import '~normalize.css';
+@import './common/reset';
+@import './common/transitions';
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 $side-padding;
+
+    @include respond-to(lg) {
+        padding: 0 $side-padding-laptop;
+    }
+
+    @include respond-to(sm) {
+        padding: 0 $side-padding-tablet;
+    }
+
+    @include respond-to(xs) {
+        padding: 0;
+    }
+}
